@@ -5,7 +5,9 @@ body * {
 }
 
 body {
-  background-color: rgba(148, 103, 87, 0.24);
+  /*background-color: rgba(148, 103, 87, 0.24);*/
+  background-color: rgba(87, 134, 148, 0.25);
+  color: #000042;
 }
 
 .clearfix:after {
@@ -18,7 +20,7 @@ body {
 header {
   float: left;
   color: darkgreen;
-  width: 100%;
+  width: 55%;
 }
 
 .header-subtitle {
@@ -29,15 +31,47 @@ header {
 
 /*Body*/
 .submissions-body {
-  padding: 0 30px 0;
+  padding: 0 40px 0;
   float: left;
-  width: 80%;
+  width: 55%;
 }
 
-.submissions-disclaimer {
-  padding: 0 30px 0;
-  float:left;
-  width: 90%;
+.submissions-image {
+  width: 30%;
+  max-width: 1824px;
+  max-height: 1392px;
+  padding: 4em 40px;
+  display: block;
+}
+
+.submissions-about {
+  padding: 0 40px 0;
+  float: left;
+  width: 30%;
+  text-align: center;
+}
+
+@media screen and (max-width: 1099px) {
+  .submissions-body {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .submissions-image {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .submissions-about {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .submissions-history {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .submissions-paragraph {
@@ -45,11 +79,17 @@ header {
   float: left;
 }
 
+ul.submissions-paragraph {
+  display: block;
+}
+
+ul.submissions-paragraph li {
+  display: list-item;
+}
+
 .disclaimer-info {
-  font: 100%/1.4 'Rubik', sans-serif;
-  /*margin-left: auto;
-  margin-right: auto;
-  text-align: center;*/
+  font: 90%/1.2 'Rubik', sans-serif;
+  font-style: italic;
 }
 
 .thesis-para {
